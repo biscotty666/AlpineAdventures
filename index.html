@@ -23,6 +23,12 @@
             margin-bottom: 1rem;
             font-family: var(--font1);
         }
+        h2 {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+        }
         .font1 {
             font-family: var(--font1);
         }
@@ -64,6 +70,9 @@
             margin-bottom: 2rem;
             background-color: white;
             padding-bottom: 1rem;
+        }
+        .hoverlist>* {
+            @apply hover:bg-gray-100 rounded-md transition duration-150
         }
     </style>
 </head>
@@ -140,7 +149,18 @@
             </div>
         </article>
     </main>
-    <aside class="bg-red-200 col-span-1 mx-[20%]">Sidebar</aside>
+    <aside class="col-span-1 mx-[20%]">
+        <section class="card p-4">
+            <h2>Categories</h2>
+            <ul class="hoverlist">
+                <li><a href="">Landscapes</a></li>
+                <li><a href="">People</a></li>
+                <li><a href="">Animals</a></li>
+                <li><a href="">Abstract</a></li>
+                <li><a href="">Black & White</a></li>
+            </ul>
+        </section>
+    </aside>
   </content>
 </body>
 </html>
